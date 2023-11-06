@@ -4,8 +4,8 @@ import paxful_auth from "../assets/paxauthy.jpg";
 
 export default function Verification() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 md:h-screen">
-      <div className="px-6 md:px-12 py-12 bg-white">
+    <section className="flex md:h-screen">
+      <div className="px-6 md:px-12 py-12 bg-white md:w-[40%]">
         <div className="flex items-center justify-between">
           <img src={paxful_logo} alt="paxful_logo" className="block" />
           <div className="flex items-center gap-x-2 p-2 border rounded-md border-gray-400">
@@ -78,8 +78,7 @@ export default function Verification() {
           </a>
         </form>
       </div>
-
-      <div className="hidden md:block">
+      <div className="hidden md:block md:w-[60%]">
         <img
           className="object-cover w-full h-full"
           src={paxful_auth}

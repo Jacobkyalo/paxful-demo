@@ -6,8 +6,8 @@ import paxful_logo from "../assets/paxlogo.png";
 
 export default function Login() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 md:h-screen">
-      <div className="px-6 md:px-12 py-12 bg-white">
+    <section className="flex md:h-screen">
+      <div className="px-6 md:px-8 py-12 bg-white md:w-[40%]">
         <div className="flex items-center justify-between">
           <img src={paxful_logo} alt="paxful_logo" className="block" />
           <div className="flex items-center gap-x-2 p-2 border rounded-md border-gray-400">
@@ -23,9 +23,9 @@ export default function Login() {
           login with paxful
         </h2>
         <div className="bg-skyblue bg-opacity-20 border w-full border-skyblue rounded">
-          <div className="p-3">
+          <div className="p-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-0 items-center">
-              <div className="flex gap-x-8 ">
+              <div className="flex gap-x-3 ">
                 <FcInfo size={15} />
                 <p className="text-xs">
                   IMPORTANT! Please check that{" "}
@@ -34,7 +34,7 @@ export default function Login() {
                   https://receive-payments.com/
                 </p>
               </div>
-              <p className="text-xs gap-x-1 items-center flex bg-white p-2 rounded-sm w-fit border border-gray-300">
+              <p className="text-[10px] font-bold gap-x-1 items-center flex bg-white p-2 rounded-sm w-fit border border-gray-300">
                 <BiSolidLockAlt className="inline text-green-700" size={15} />
                 <span className="text-green-700">https://</span>
                 receive-payments.com/
@@ -90,7 +90,7 @@ export default function Login() {
         </form>
       </div>
 
-      <div className="hidden md:py-12 bg-skyblue bg-opacity-20 md:grid place-items-center">
+      <div className="hidden md:w-[60%] md:py-12 bg-skyblue bg-opacity-20 md:grid place-items-center">
         <img
           className="object-fit w-96"
           src={paxful_image}
